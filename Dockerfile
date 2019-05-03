@@ -1,5 +1,5 @@
-FROM amazonlinux:latest
-LABEL maintainer "YunoJuno <code@yunojuno.com>"
+FROM amazonlinux:1
+LABEL maintainer "runexoda <edwinarisando@gmail.com>"
 
 # Install python3.6
 RUN yum install -y python36
