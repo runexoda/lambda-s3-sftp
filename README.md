@@ -14,14 +14,17 @@ The function supports authentication against the remote SFTP server using a user
 Configuration
 -------------
 
-The following environment variables MUST be set:
+The following environment variables is REQUIRED:
 
     SSH_HOST - the host address of the destination SFTP server
     SSH_USERNAME - the SSH account username
-    SSH_PASSWORD - the SSH account password, OR
+
+The following environment variables is REQUIRED, but choose ONLY ONE variable to set:
+
+    SSH_PASSWORD - the SSH account password
     SSH_PRIVATE_KEY - path to a private key file on S3, in 'bucket:key' format
 
-The following environment variables MAY be set:
+The following environment variables is NOT REQUIRED:
 
     SSH_PORT - the port number (defaults to 22)
     SSH_DIR - a specific directory to upload files to
